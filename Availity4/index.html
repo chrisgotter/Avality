@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 4</title>
+  </head>
+  <body>
+    <p>
+      Coding exercise: You are tasked to write a checker that validates the parentheses of a
+      LISP code. Write a program (in Java or JavaScript) which takes in a string as an input and
+      returns true if all the parentheses in the string are properly closed and nested.
+    </p>
+    <div>
+
+      <label>verbose<input type="checkbox" id="verbose"/></label>
+      <button onclick="verifyHandler()">
+        validate
+      </button>
+      <br />
+      <textarea id="code" rows="15" cols="80">(defun factorial (n)
+    (loop for i from 1 to n
+        for fac = 1 then (* fac i);xx)
+        finally (return fac)))</textarea>
+      <pre><output id="result"></output></pre>
+    </div>
+    
+    <script src="exercise4.js"></script>
+  </body>
+</html>
